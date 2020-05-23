@@ -32,6 +32,7 @@ nav.top img {
     transform: scale(0.8);
     right: 20px;
     top: 31px;
+    cursor: pointer;
 }
 
 nav.top img:hover~input {
@@ -150,6 +151,11 @@ nav.left {
     transition: 0.3s;
 }
 
+nav.left li:hover {
+    text-decoration: underline solid black;
+    cursor: pointer;
+}
+
 div.hide {
     opacity: 0;
 }
@@ -228,7 +234,8 @@ nav.left ul.third li:nth-child(3) {
 }
 
 nav.left img {
-    display: block
+    display: block;
+    cursor: pointer;
 }
 
 nav.left img:nth-of-type(1) {
