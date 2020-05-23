@@ -118,6 +118,7 @@ nav.left {
     margin-left: 50px;
     margin-top: 86px;
     position: relative;
+    transition: 0.3s;
 }
 
 div.hide {
@@ -214,6 +215,7 @@ nav.left img.strzalka {
     top: 50.6%;
     left: 120.4%;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 nav.left img.rotate {
@@ -225,4 +227,23 @@ nav.left p {
     top: 58.7%;
     left: 110.1%;
     opacity: 0.9;
+    transition: 0.3s;
+}
+
+nav.left p.hide {
+    opacity: 0;
+}
+
+
+nav.left img.logobezkola {
+    position: absolute;
+    top: -13.7%;
+    opacity: 0.7;
+    left: 140%;
+    clip: rect(0px, 200px, 150px, 20px);
+    transition: 0.3s;
+}
+
+nav.left img.hide {
+    opacity: 0;
 }
