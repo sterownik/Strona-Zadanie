@@ -183,7 +183,7 @@ nav.left ul.second {
     padding-top: 20px;
     border-top: dotted black 2px;
     padding-bottom: 16px;
-    border-bottom: dotted black 2px;
+
 }
 
 nav.left ul.second li {
@@ -281,4 +281,181 @@ nav.left img.logobezkola {
 
 nav.left img.hide {
     opacity: 0;
+}
+
+main {
+    max-width: 998px;
+    margin: 50px auto 0 auto;
+    padding: 0;
+}
+
+main h2 {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+main h2 span {
+    font-size: 17px;
+}
+
+main section {
+    width: 998px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main section div.cleft {
+    width: 475px;
+    padding: 0;
+    margin: 0;
+}
+
+main section div.cright {
+    width: 480px;
+    padding: 0;
+    margin-top: 20px;
+}
+
+main section div.cleft img {
+    padding: 0;
+    margin-top: 20px;
+    margin-left: -3px;
+}
+
+main section p {
+    font-size: 16px;
+    hyphens: manual;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+main section strong {
+    font-weight: normal;
+    padding-right: 0px;
+    margin-right: 0px;
+
+}
+
+main section div.cleft p:nth-of-type(odd) {
+    display: block;
+
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main section div.cleft p:nth-of-type(5) {
+    margin-top: 12px;
+}
+
+main section div.cleft p:nth-of-type(7) {
+    margin-top: 10.5px;
+}
+
+main section div.cright p:nth-of-type(even) {
+    display: block;
+    margin-top: 14px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main section div.cright p.opis {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+br {
+    content: " ";
+    display: block;
+    margin: -3px 0;
+}
+
+main section div.cright p:nth-of-type(2) {
+    display: block;
+    margin-top: 14px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main section div.cright p:nth-of-type(7) {
+    display: block;
+    margin-top: 12px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2px;
+}
+
+main section div.cright p:nth-of-type(6) {
+    font-size: 16px;
+    hyphens: manual;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 11px 0 0 0;
+}
+
+main section div.cright p:nth-of-type(8) {
+    font-size: 16px;
+    hyphens: manual;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+footer {
+    margin-top: 120px;
+    height: 68px;
+    background-color: #023a5c;
+    width: 100%;
+}
+
+@media(max-width:1366px) {
+    nav.left {
+        float: left;
+        margin-left: 20px;
+        margin-top: 86px;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    nav.hide {
+        margin-left: -100px;
+    }
+
+    nav.top input {
+        color: white;
+        opacity: 0;
+        right: 65px;
+        top: 12px;
+        position: absolute;
+        height: 32px;
+        width: 127px;
+        font-size: 13px;
+        background-color: #00183a;
+        border: none;
+        box-sizing: border-box;
+    }
+
+    nav.left img.logobezkola {
+        position: absolute;
+        top: -13.7%;
+        opacity: 0.7;
+        left: 125%;
+        clip: rect(0px, 200px, 150px, 20px);
+        transition: 0.3s;
+    }
+
+    nav.left img.hide {
+        opacity: 0;
+    }
 }
