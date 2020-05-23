@@ -3,6 +3,8 @@ var navleft = document.querySelector("nav.left");
 var divleft = document.querySelector("div.leftleft");
 var navp = document.querySelector("nav.left p");
 var logobezkola = document.querySelector("nav.left img.logobezkola");
+var lupka = document.querySelector("nav.top img");
+var input = document.querySelector("nav.top input");
 
 arrow.addEventListener("click", function () {
     console.log('klik');
@@ -11,4 +13,8 @@ arrow.addEventListener("click", function () {
     arrow.classList.toggle("rotate");
     navp.classList.toggle("hide");
     logobezkola.classList.toggle("hide");
+
+})
+lupka.addEventListener("click", function () {
+    input.classList.toggle("hide");
 })
