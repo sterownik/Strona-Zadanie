@@ -564,6 +564,10 @@ br {
         color: white;
     }
 
+    nav.top ul li:hover {
+        text-decoration: underline solid white;
+    }
+
     nav.left {
         z-index: 2;
         background-color: #023a5c;
@@ -584,6 +588,10 @@ br {
         color: white;
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
+    }
+
+    nav.left ul li:hover {
+        text-decoration: underline solid white;
     }
 
     nav.left img.hide {
