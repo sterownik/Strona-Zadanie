@@ -4,27 +4,13 @@
     box-sizing: border-box;
 }
 
+
+
+/* nawigacja na górze */
 nav.top {
     background-color: #023a5c;
     height: 88px;
     width: 100%;
-}
-
-header {
-    max-width: 998px;
-    margin: 0 auto;
-    position: relative;
-    height: 220px;
-
-    border-bottom: dotted black 2px;
-
-}
-
-header img.logo {
-    top: -88px;
-    position: absolute;
-    background-color: white;
-    padding: 17px 39px 2px 24px;
 }
 
 nav.top img {
@@ -33,14 +19,6 @@ nav.top img {
     right: 20px;
     top: 31px;
     cursor: pointer;
-}
-
-nav.top img:hover~input {
-    opacity: 1;
-}
-
-nav.top input.hide {
-    opacity: 1;
 }
 
 nav.top input {
@@ -57,6 +35,17 @@ nav.top input {
     box-sizing: border-box;
 }
 
+/* po najechaniu na ikone lupy */
+nav.top img:hover~input {
+    opacity: 1;
+}
+
+/* chowanie ikony lupy do js */
+nav.top input.hide {
+    opacity: 1;
+}
+
+/* gorne menu */
 nav.top ul {
     max-width: 998px;
     margin: 0 auto;
@@ -68,6 +57,7 @@ nav.top ul {
     text-align: center;
 }
 
+/* poszczegolne czesci ul */
 nav.top ul li {
     float: left;
     line-height: 70px;
@@ -80,18 +70,19 @@ nav.top ul li {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* poszczegolne czesci ul pojedynczo */
 nav.top ul li:nth-child(6) {
     margin: 0 0 0 35px;
     padding: 0 0 0 8px;
 }
 
-nav.top ul li:nth-child(4) {
-    margin: 0 0 0 26px;
-}
-
 nav.top ul li:nth-child(5) {
     margin: 0 0 0 29px;
     padding: 0 0 0 8px;
+}
+
+nav.top ul li:nth-child(4) {
+    margin: 0 0 0 26px;
 }
 
 nav.top ul li:nth-child(2) {
@@ -105,8 +96,27 @@ nav.top ul li:nth-child(1) {
 
 }
 
+/* po najechaniu na czesc ul */
 nav.top ul li:hover {
     text-decoration: underline solid white;
+}
+
+/* ikona domu oraz logo firmy */
+header {
+    max-width: 998px;
+    margin: 0 auto;
+    position: relative;
+    height: 220px;
+
+    border-bottom: dotted black 2px;
+
+}
+
+header img.logo {
+    top: -88px;
+    position: absolute;
+    background-color: white;
+    padding: 17px 39px 2px 24px;
 }
 
 header div.about {
@@ -137,12 +147,8 @@ header div.about p {
     font-weight: 400;
 }
 
-.clearfix {
-    content: "";
-    display: block;
-    clear: both;
-}
 
+/* lewa nawigacja */
 nav.left {
     float: left;
     margin-left: 50px;
@@ -151,34 +157,34 @@ nav.left {
     transition: 0.3s;
 }
 
+/* po najechaniu na poszczegolne czesci w lewej nawigacji */
 nav.left li:hover {
     text-decoration: underline solid black;
     cursor: pointer;
 }
 
+/* chowanie nawigacji ale bez strzalki sluzy do js */
 div.hide {
     opacity: 0;
 }
 
+/* cala nawigacja razem ze strzalka w lewo */
 nav.hide {
     margin-left: -100px;
 }
 
+/* stylowanie menu */
 nav.left ul {
     list-style-type: none;
     width: 103px;
 }
 
-nav.left ul li {
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-}
-
+/* pierwsze menu "menu" */
 nav.left ul.first {
     margin-bottom: 17px;
-
 }
 
+/* drugie menu z 6 elementami */
 nav.left ul.second {
     padding-top: 20px;
     border-top: dotted black 2px;
@@ -186,10 +192,18 @@ nav.left ul.second {
 
 }
 
+/* stylowanie wszystkich czesci menu */
+nav.left ul li {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* stylowanie wszystkich czesci drugiego menu */
 nav.left ul.second li {
     padding: 4px 0;
 }
 
+/* stylowanie pierwszego elementu w drugim menu */
 nav.left ul.second li:nth-child(1) {
     padding: 0;
 }
@@ -202,6 +216,7 @@ nav.left ul.second li:nth-child(6) {
     padding: 5px 0;
 }
 
+/* trzecie menu w lewej nawigacji gdzie jest 6 wartosci */
 nav.left ul.third {
     padding-top: 15px;
     border-top: dotted black 2px;
@@ -209,12 +224,18 @@ nav.left ul.third {
     border-bottom: dotted black 2px;
 }
 
+/* stylowanie elementow w trzecim menu w lewej nawigacji */
 nav.left ul.third li {
     padding: 4px 0;
 }
 
+/* stylowanie pierwszego elementu odzielnie w tzrecim menu w lewej nawigacji */
 nav.left ul.third li:nth-child(1) {
     padding: 0;
+}
+
+nav.left ul.third li:nth-child(3) {
+    padding: 3px 0;
 }
 
 nav.left ul.third li:nth-child(5) {
@@ -225,27 +246,23 @@ nav.left ul.third li:nth-child(6) {
     padding: 5px 0;
 }
 
-nav.left ul.third li:nth-child(3) {
-    padding: 2px 0;
-}
-
-nav.left ul.third li:nth-child(3) {
-    padding: 3px 0;
-}
-
+/* zdjecia fb i in w lewej nawigacji */
 nav.left img {
     display: block;
     cursor: pointer;
 }
 
+/* pierwsze zdjecie fb stylowanie */
 nav.left img:nth-of-type(1) {
     margin-top: 24px;
 }
 
+/* drugie zdjecie in stylowanie */
 nav.left img:nth-of-type(2) {
     margin-top: 21px;
 }
 
+/* strzalka stylowanie */
 nav.left img.strzalka {
     position: absolute;
     top: 50.6%;
@@ -254,10 +271,12 @@ nav.left img.strzalka {
     transition: 0.3s;
 }
 
+/* strzalka obracanie do js */
 nav.left img.rotate {
     transform: rotate(180deg);
 }
 
+/* napis menu pod strzalka ktory ma byc schowany jak menu jes wysuniete */
 nav.left p {
     position: absolute;
     top: 58.7%;
@@ -266,10 +285,12 @@ nav.left p {
     transition: 0.5s;
 }
 
+/* schowanie napisu menu po wysuneciu menu */
 nav.left p.hide {
     opacity: 0;
 }
 
+/* logo bez kola ktore ma sie pokazywac jesli menu jest schowane stylowanie */
 nav.left img.logobezkola {
     position: absolute;
     top: -13.7%;
@@ -279,16 +300,19 @@ nav.left img.logobezkola {
     transition: 0.3s;
 }
 
+/* chowanie tego loga bez kola do js */
 nav.left img.hide {
     opacity: 0;
 }
 
+/* glowna sekcja */
 main {
     max-width: 998px;
     margin: 50px auto 0 auto;
     padding: 0;
 }
 
+/* tytuł naglowka w main */
 main h2 {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
@@ -297,10 +321,12 @@ main h2 {
     margin: 0;
 }
 
+/* stylowanie napisu w h2 ktrego oznaczylem spanem aby byl jak najbardziej podobny do tego z psd */
 main h2 span {
     font-size: 17px;
 }
 
+/* sekcja w sekcji glownej display flex zeby bylo wciecie  */
 main section {
     width: 998px;
     display: flex;
@@ -308,24 +334,28 @@ main section {
 
 }
 
+/* div w sekcji po lewej stronie styowanie */
 main section div.cleft {
     width: 475px;
     padding: 0;
     margin: 0;
 }
 
+/* div w skecji po prawej stronie stylowanie */
 main section div.cright {
     width: 480px;
     padding: 0;
     margin-top: 20px;
 }
 
+/* zdjecie w divie po lewej stronie */
 main section div.cleft img {
     padding: 0;
     margin-top: 20px;
     margin-left: -3px;
 }
 
+/* ogolnie stylowanie dla wszystkich p */
 main section p {
     font-size: 16px;
     hyphens: manual;
@@ -335,83 +365,88 @@ main section p {
     margin: 0;
 }
 
+/* tytuly firmy i wazne slowa */
 main section strong {
     font-weight: normal;
     padding-right: 0px;
     margin-right: 0px;
-
 }
 
+/* nie parzyste p w divie po lewej maja miec wiekszy size */
 main section div.cleft p:nth-of-type(odd) {
     display: block;
-
     margin-top: 10px;
     font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
+
 }
 
+/* zwiekszenie marginseu z gory dla 5 p w leweym divie */
 main section div.cleft p:nth-of-type(5) {
     margin-top: 12px;
 }
 
+/* zwiekszenie marginseu z gory dla 7 p w leweym divie */
 main section div.cleft p:nth-of-type(7) {
     margin-top: 10.5px;
 }
 
+/* parzyste p w divie po prawej maja miec wiekszy size */
 main section div.cright p:nth-of-type(even) {
     display: block;
     margin-top: 14px;
     font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
+
 }
 
+/* temu p przypisalem specjalna klase bo jego wartosci stylowania troszke sie roznily w psd */
 main section div.cright p.opis {
     display: block;
     margin-top: 10px;
     font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
+
 }
 
-br {
-    content: " ";
-    display: block;
-    margin: -3px 0;
-}
 
+/* drugi p w divie po prawej */
 main section div.cright p:nth-of-type(2) {
     display: block;
     margin-top: 14px;
     font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
+
 }
 
-main section div.cright p:nth-of-type(7) {
-    display: block;
-    margin-top: 12px;
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 2px;
-}
-
+/* szosty p w divie po prawej */
 main section div.cright p:nth-of-type(6) {
     font-size: 16px;
     hyphens: manual;
     text-align: justify;
-    font-family: 'Open Sans', sans-serif;
+
     padding: 0;
     margin: 11px 0 0 0;
 }
 
+/* siodmy p w divie po prawej */
+main section div.cright p:nth-of-type(7) {
+    display: block;
+    margin-top: 12px;
+    font-size: 18px;
+
+    margin-bottom: 2px;
+}
+
+
+/* osmy p w divie po prawej */
 main section div.cright p:nth-of-type(8) {
     font-size: 16px;
     hyphens: manual;
     text-align: justify;
-    font-family: 'Open Sans', sans-serif;
+
     padding: 0;
     margin: 0;
 
 }
 
+/* stopka */
 footer {
     margin-top: 120px;
     height: 68px;
@@ -419,19 +454,15 @@ footer {
     width: 100%;
 }
 
+/* stylowanie przejscia do drugiej lini */
+br {
+    content: " ";
+    display: block;
+    margin: -3px 0;
+}
+
+/* zmiana wygladu dla szerokosci max  1366px  i nizszych*/
 @media(max-width:1366px) {
-    nav.left {
-        float: left;
-        margin-left: 20px;
-        margin-top: 86px;
-        position: relative;
-        transition: 0.3s;
-    }
-
-    nav.hide {
-        margin-left: -100px;
-    }
-
     nav.top input {
         color: white;
         opacity: 0;
@@ -446,6 +477,14 @@ footer {
         box-sizing: border-box;
     }
 
+    nav.left {
+        float: left;
+        margin-left: 20px;
+        margin-top: 86px;
+        position: relative;
+        transition: 0.3s;
+    }
+
     nav.left img.logobezkola {
         position: absolute;
         top: -13.7%;
@@ -457,5 +496,443 @@ footer {
 
     nav.left img.hide {
         opacity: 0;
+    }
+
+    nav.hide {
+        margin-left: -100px;
+    }
+}
+
+@media(max-width:1024px) {
+    main {
+        max-width: 708px;
+    }
+
+    div.hide {
+        opacity: 0;
+    }
+
+    main section {
+        width: 708px;
+    }
+
+    main section div.cleft {
+        width: 325px;
+    }
+
+    main section div.cright {
+        width: 330px;
+    }
+
+    main section div.cleft img {
+        width: 325px;
+    }
+
+    header {
+        max-width: 708px;
+    }
+
+
+
+
+    nav.left img.strzalka {
+        left: 105.4%;
+    }
+
+    nav.top ul {
+        max-width: 708px;
+        padding-left: 166px;
+    }
+
+    nav.top ul li {
+        line-height: 70px;
+        font-size: 14px;
+        margin: 0 13px;
+
+    }
+
+    header img.logo {
+        width: 170px;
+        top: -88px;
+        position: absolute;
+        background-color: white;
+    }
+}
+
+@media(max-width:768px) {
+    nav.top img {
+        position: absolute;
+        transform: scale(0.6);
+        right: 20px;
+        top: 31px;
+        cursor: pointer;
+    }
+
+    main {
+        max-width: 608px;
+    }
+
+    main section {
+        width: 608px;
+    }
+
+    main section div.cleft {
+        width: 285px;
+    }
+
+    main section div.cright {
+        width: 280px;
+    }
+
+    main section div.cleft img {
+        width: 285px;
+    }
+
+    header {
+        max-width: 608px;
+    }
+
+
+
+    nav.top ul {
+        max-width: 608px;
+        padding-left: 166px;
+    }
+
+    nav.top ul li {
+        line-height: 70px;
+        font-size: 14px;
+        margin: 0 13px;
+    }
+
+    header img.logo {
+        width: 170px;
+        top: -88px;
+        left: 0;
+        position: absolute;
+        background-color: white;
+    }
+
+
+    nav.left {
+        z-index: 2;
+        background-color: #ddd;
+        padding: 10px;
+        margin-top: 86px;
+        position: absolute;
+        transition: 0.3s;
+    }
+
+    nav.left ul {
+        list-style-type: none;
+        width: 143px;
+    }
+
+    nav.left img.hide {
+        opacity: 0;
+    }
+
+    nav.hide {
+        margin-left: -160px;
+    }
+
+    nav.left img:nth-of-type(1) {
+        left: 105.4%;
+        background: url(img/facebook.png);
+        display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        width: 24px;
+        height: 24px;
+        padding-left: 24px;
+    }
+
+    /* drugie zdjecie in stylowanie */
+    nav.left img:nth-of-type(2) {
+        left: 105.4%;
+        background: url(img/linkedin.png);
+        display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-left: 8px;
+        width: 24px;
+        height: 24px;
+        padding-left: 24px;
+    }
+
+    nav.left img.strzalka {
+        left: 105.4%;
+        background: url(img/back.png);
+        display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 24px;
+        height: 24px;
+        padding-left: 24px;
+    }
+
+
+}
+
+@media(max-width:414px) {
+    main {
+        max-width: 398px;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    nav.left img.hide {
+        display: none;
+    }
+
+    nav.hide {
+        margin-left: -170px;
+    }
+
+    main section {
+        width: 398px;
+    }
+
+    main section div.cleft {
+        width: 185px;
+    }
+
+    main section div.cright {
+        width: 180px;
+    }
+
+    main section div.cleft img {
+        width: 185px;
+    }
+
+    header {
+        max-width: 398px;
+    }
+
+    nav.top ul {
+        padding-left: 6px;
+    }
+
+    nav.left img.strzalka {
+        opacity: 0.4;
+    }
+
+    nav.left p {
+        opacity: 0;
+    }
+
+    nav.top ul li {
+        line-height: 40px;
+        font-size: 9px;
+        margin: 0 3px;
+    }
+
+    header img.logo {
+        transform: scale(0.5);
+        top: -70px;
+        left: -55px;
+
+    }
+
+    nav.top ul li:nth-child(6) {
+        margin: 0 0 0 5px;
+        padding: 0 0 0 8px;
+    }
+
+    nav.top ul li:nth-child(5) {
+        margin: 0 0 0 9px;
+        padding: 0 0 0 8px;
+    }
+
+    nav.top ul li:nth-child(4) {
+        margin: 0 0 0 6px;
+    }
+
+    nav.top ul li:nth-child(2) {
+        padding: 0 0 0 0.5px;
+    }
+
+    nav.top ul li:nth-child(1) {
+        margin: 0 1px 0 2.5px;
+    }
+
+    nav.top {
+        background-color: #023a5c;
+        height: 40px;
+        width: 100%;
+    }
+
+    nav.top ul {
+        max-width: none;
+        margin: 0 auto;
+        padding-top: 0;
+        height: 40px;
+        padding-left: 90px;
+    }
+
+    nav.top img {
+        transform: scale(0.4);
+        right: 10px;
+        top: 3px;
+    }
+
+    nav.top input {
+        right: 39px;
+        top: 2px;
+        height: 16px;
+        width: 87px;
+    }
+
+    nav.left ul li {
+        font-size: 14px;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    header img.logo {
+        margin-left: 8px;
+        top: -68px;
+    }
+
+    header div.about {
+        top: 13px;
+
+        width: 100%;
+    }
+
+    header div.about img {
+        transform: scale(0.6);
+
+        left: 20%;
+    }
+
+    header div.about p {
+        line-height: 50px;
+        font-size: 18px;
+        margin-top: 10px;
+        left: 51%;
+    }
+}
+
+@media(max-width:375px) {
+    main {
+        max-width: 348px;
+    }
+
+    nav.left img.hide {
+        display: none;
+    }
+
+    main section {
+        width: 348px;
+    }
+
+    main section div.cleft {
+        width: 165px;
+    }
+
+    main section div.cright {
+        width: 160px;
+    }
+
+    main section div.cleft img {
+        width: 165px;
+    }
+
+    header {
+        max-width: 348px;
+    }
+
+    nav.top ul li {
+
+        font-size: 8px;
+        margin: 0 2px;
+    }
+
+    nav.top ul {
+        padding-top: 0;
+        height: 40px;
+        padding-left: 100px;
+    }
+
+    nav.top img {
+        right: -2px;
+        top: 2px;
+    }
+
+    nav.top input {
+        right: 25px;
+        top: 2px;
+        height: 14px;
+        width: 77px;
+        font-size: 13px;
+    }
+
+
+}
+
+@media(max-width:360px) {
+    nav.top img {
+        transform: scale(0.3);
+        right: -10px;
+        top: 10px;
+    }
+
+    nav.left img.hide {
+        display: none;
+    }
+
+    nav.top input {
+        right: 17px;
+        top: 24px;
+    }
+}
+
+@media(max-width:320px) {
+    main {
+        max-width: 310px;
+    }
+
+    main section {
+        width: 310px;
+    }
+
+    main section div.cleft {
+        width: 145px;
+    }
+
+    main section div.cright {
+        width: 145px;
+    }
+
+    main section div.cleft img {
+        width: 145px;
+    }
+
+    header {
+
+        height: 80px;
+    }
+
+    header div.about {
+        top: 0;
+    }
+
+    header div.about img {
+        transform: scale(0.4);
+
+
+    }
+
+    header div.about p {
+        line-height: 40px;
+        font-size: 13px;
+        margin-top: 20px;
+        left: 50%;
     }
 }
