@@ -495,6 +495,7 @@ br {
     }
 }
 
+/* responsywnosc dla urzadzen o szerokosci 1024px i nizszych */
 @media(max-width:1024px) {
     nav.left img.strzalka {
         left: 105.4%;
@@ -541,6 +542,7 @@ br {
     }
 }
 
+/* responsywnosc dla urzadzen o szerokosci 768px i nizszych */
 @media(max-width:768px) {
     nav.top img {
 
@@ -582,6 +584,7 @@ br {
         margin-left: -160px;
     }
 
+    /* zmiana ikony facebooka na taka bez tlem */
     nav.left img:nth-of-type(1) {
         left: 105.4%;
         background: url(img/facebook.png);
@@ -593,7 +596,7 @@ br {
         padding-left: 24px;
     }
 
-    /* zamiana ikon */
+    /* zamiana ikon linkiedin na taka bez tla */
     nav.left img:nth-of-type(2) {
         left: 105.4%;
         background: url(img/linkedin.png);
@@ -606,6 +609,7 @@ br {
         padding-left: 24px;
     }
 
+    /* zmiana ikony strzalki na taka bez tla */
     nav.left img.strzalka {
         left: 105.4%;
         background: url(img/back.png);
@@ -659,6 +663,7 @@ br {
     }
 }
 
+/* responsywnosc dla urzadzen o szerokosci 414px i nizszych */
 @media(max-width:414px) {
 
 
@@ -675,9 +680,10 @@ br {
         padding-left: 90px;
     }
 
+    /* zmniejszenie ikony lupy */
     nav.top img {
         transform: scale(0.4);
-        right: 10px;
+        right: 4px;
         top: 3px;
     }
 
@@ -763,6 +769,7 @@ br {
         width: 360px;
     }
 
+    /* zmienijszenie ikony loga */
     header img.logo {
         transform: scale(0.5);
         top: -70px;
@@ -778,6 +785,7 @@ br {
         width: 100%;
     }
 
+    /* zmniejszenie ikony domu */
     header div.about img {
         transform: scale(0.6);
         left: 20%;
@@ -795,6 +803,7 @@ br {
 
 }
 
+/* responsywnosc dla urzadzen o szerokosci 375px i nizszych */
 @media(max-width:375px) {
     nav.top ul {
         padding-top: 0;
@@ -803,7 +812,7 @@ br {
     }
 
     nav.top img {
-        right: -2px;
+        right: -3px;
         top: 2px;
     }
 
@@ -859,6 +868,7 @@ br {
 
 }
 
+/* responsywnosc dla urzadzen o szerokosci 360px i nizszych */
 @media(max-width:360px) {
     body nav.left img.logobezkola {
         left: 85%;
@@ -886,6 +896,7 @@ br {
 
 }
 
+/* responsywnosc dla urzadzen o szerokosci 320px i nizszych */
 @media(max-width:320px) {
     body nav.left img.logobezkola {
         transform: scale(0.8);
