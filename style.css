@@ -683,7 +683,7 @@ br {
     /* zmniejszenie ikony lupy */
     nav.top img {
         transform: scale(0.4);
-        right: 4px;
+        right: 3px;
         top: 3px;
     }
 
