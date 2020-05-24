@@ -685,8 +685,6 @@ br {
 
 /* responsywnosc dla urzadzen o szerokosci 414px i nizszych */
 @media(max-width:414px) {
-
-
     nav.top {
         height: 40px;
         width: 100%;
@@ -825,10 +823,6 @@ br {
         margin-top: 10px;
         left: 51%;
     }
-
-
-
-
 }
 
 /* responsywnosc dla urzadzen o szerokosci 375px i nizszych */
@@ -873,7 +867,6 @@ br {
     }
 
     nav.top ul li {
-
         font-size: 8px;
         margin: 0 2px;
     }
@@ -962,7 +955,6 @@ br {
     header {
         width: 290px;
         height: 80px;
-
     }
 
     header div.about {
