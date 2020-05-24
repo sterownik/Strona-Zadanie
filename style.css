@@ -5,7 +5,6 @@
 }
 
 
-
 /* nawigacja na górze */
 nav.top {
     background-color: #023a5c;
@@ -508,10 +507,6 @@ br {
         max-width: 708px;
     }
 
-    div.hide {
-        opacity: 0;
-    }
-
     main section {
         width: 708px;
     }
@@ -527,11 +522,6 @@ br {
     main section div.cleft img {
         width: 325px;
     }
-
-    header {
-        max-width: 708px;
-    }
-
 
 
 
@@ -551,21 +541,25 @@ br {
 
     }
 
+    header {
+        max-width: 708px;
+    }
+
     header img.logo {
         width: 170px;
         top: -88px;
-        position: absolute;
-        background-color: white;
+
     }
+
+
 }
 
 @media(max-width:768px) {
     nav.top img {
-        position: absolute;
+
         transform: scale(0.6);
         right: 20px;
         top: 31px;
-        cursor: pointer;
     }
 
     main {
@@ -592,8 +586,6 @@ br {
         max-width: 608px;
     }
 
-
-
     nav.top ul {
         max-width: 608px;
         padding-left: 166px;
@@ -609,8 +601,7 @@ br {
         width: 170px;
         top: -88px;
         left: 0;
-        position: absolute;
-        background-color: white;
+
     }
 
 
@@ -620,7 +611,7 @@ br {
         padding: 10px;
         margin-top: 86px;
         position: absolute;
-        transition: 0.3s;
+
     }
 
     nav.left ul {
@@ -642,13 +633,12 @@ br {
         display: block;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-
         width: 24px;
         height: 24px;
         padding-left: 24px;
     }
 
-    /* drugie zdjecie in stylowanie */
+    /* zamiana ikon */
     nav.left img:nth-of-type(2) {
         left: 105.4%;
         background: url(img/linkedin.png);
@@ -660,6 +650,19 @@ br {
         height: 24px;
         padding-left: 24px;
     }
+
+    body nav.left img.logobezkola {
+        width: 144px;
+        height: 32px;
+        top: -13.7%;
+        left: 125%;
+    }
+
+    body nav.left img.hide {
+        opacity: 0;
+    }
+
+
 
     nav.left img.strzalka {
         left: 105.4%;
@@ -680,18 +683,6 @@ br {
         max-width: 398px;
     }
 
-    body {
-        margin: 0;
-    }
-
-    nav.left img.hide {
-        display: none;
-    }
-
-    nav.hide {
-        margin-left: -170px;
-    }
-
     main section {
         width: 398px;
     }
@@ -709,7 +700,8 @@ br {
     }
 
     header {
-        max-width: 398px;
+        height: 100px;
+        width: 360px;
     }
 
     nav.top ul {
@@ -733,8 +725,7 @@ br {
     header img.logo {
         transform: scale(0.5);
         top: -70px;
-        left: -55px;
-
+        left: -75px;
     }
 
     nav.top ul li:nth-child(6) {
@@ -760,7 +751,7 @@ br {
     }
 
     nav.top {
-        background-color: #023a5c;
+
         height: 40px;
         width: 100%;
     }
@@ -790,8 +781,12 @@ br {
         font-size: 14px;
     }
 
-    header {
-        height: 100px;
+    body nav.left img.logobezkola {
+        left: 85%;
+    }
+
+    body nav.left img.hide {
+        opacity: 0;
     }
 
     header img.logo {
@@ -801,13 +796,11 @@ br {
 
     header div.about {
         top: 13px;
-
         width: 100%;
     }
 
     header div.about img {
         transform: scale(0.6);
-
         left: 20%;
     }
 
@@ -822,10 +815,6 @@ br {
 @media(max-width:375px) {
     main {
         max-width: 348px;
-    }
-
-    nav.left img.hide {
-        display: none;
     }
 
     main section {
@@ -844,14 +833,25 @@ br {
         width: 165px;
     }
 
-    header {
-        max-width: 348px;
-    }
-
     nav.top ul li {
 
         font-size: 8px;
         margin: 0 2px;
+    }
+
+    header {
+        width: 330px;
+        max-width: none;
+    }
+
+    header div.about p {
+        left: 54%;
+    }
+
+    header img.logo {
+        transform: scale(0.5);
+        top: -70px;
+        left: -60px;
     }
 
     nav.top ul {
@@ -883,14 +883,26 @@ br {
         top: 10px;
     }
 
-    nav.left img.hide {
-        display: none;
-    }
-
     nav.top input {
         right: 17px;
         top: 24px;
     }
+
+    header {
+        width: 320px;
+    }
+
+    body nav.left img.logobezkola {
+
+        left: 85%;
+        transform: scale(0.8);
+    }
+
+    body nav.left img.hide {
+        opacity: 0;
+    }
+
+
 }
 
 @media(max-width:320px) {
@@ -914,9 +926,15 @@ br {
         width: 145px;
     }
 
-    header {
+    nav.top input {
+        right: 17px;
+        top: 24px;
+    }
 
+    header {
+        width: 290px;
         height: 80px;
+
     }
 
     header div.about {
@@ -925,14 +943,22 @@ br {
 
     header div.about img {
         transform: scale(0.4);
-
-
     }
 
     header div.about p {
         line-height: 40px;
         font-size: 13px;
         margin-top: 20px;
-        left: 50%;
+        left: 53%;
+    }
+
+    body nav.left img.logobezkola {
+
+        transform: scale(0.8);
+
+    }
+
+    body nav.left img.hide {
+        opacity: 0;
     }
 }
