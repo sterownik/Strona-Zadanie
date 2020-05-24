@@ -193,6 +193,7 @@ nav.left ul.second {
 
 /* stylowanie wszystkich czesci menu */
 nav.left ul li {
+
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -560,20 +561,29 @@ br {
         line-height: 70px;
         font-size: 14px;
         margin: 0 13px;
+        color: white;
     }
 
     nav.left {
         z-index: 2;
-        background-color: #ddd;
+        background-color: #023a5c;
         padding: 10px;
         margin-top: 86px;
         position: absolute;
+        margin-left: 0px;
 
     }
+
 
     nav.left ul {
         list-style-type: none;
         width: 143px;
+    }
+
+    nav.left ul li {
+        color: white;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
     }
 
     nav.left img.hide {
@@ -594,6 +604,7 @@ br {
         width: 24px;
         height: 24px;
         padding-left: 24px;
+
     }
 
     /* zamiana ikon linkiedin na taka bez tla */
@@ -607,6 +618,7 @@ br {
         width: 24px;
         height: 24px;
         padding-left: 24px;
+        color: white;
     }
 
     /* zmiana ikony strzalki na taka bez tla */
@@ -742,6 +754,14 @@ br {
 
     body nav.left img.hide {
         opacity: 0;
+    }
+
+    nav.left img.strzalka {
+        position: absolute;
+        top: 0;
+        left: 120.4%;
+        cursor: pointer;
+        transition: 0.3s;
     }
 
     main {
