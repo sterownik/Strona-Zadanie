@@ -1,9 +1,9 @@
+/* wyzerowanie styli */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 /* nawigacja na górze */
 nav.top {
@@ -376,7 +376,6 @@ main section div.cleft p:nth-of-type(odd) {
     display: block;
     margin-top: 10px;
     font-size: 18px;
-
 }
 
 /* zwiekszenie marginseu z gory dla 5 p w leweym divie */
@@ -394,7 +393,6 @@ main section div.cright p:nth-of-type(even) {
     display: block;
     margin-top: 14px;
     font-size: 18px;
-
 }
 
 /* temu p przypisalem specjalna klase bo jego wartosci stylowania troszke sie roznily w psd */
@@ -402,7 +400,6 @@ main section div.cright p.opis {
     display: block;
     margin-top: 10px;
     font-size: 18px;
-
 }
 
 
@@ -411,7 +408,6 @@ main section div.cright p:nth-of-type(2) {
     display: block;
     margin-top: 14px;
     font-size: 18px;
-
 }
 
 /* szosty p w divie po prawej */
@@ -419,7 +415,6 @@ main section div.cright p:nth-of-type(6) {
     font-size: 16px;
     hyphens: manual;
     text-align: justify;
-
     padding: 0;
     margin: 11px 0 0 0;
 }
@@ -429,7 +424,6 @@ main section div.cright p:nth-of-type(7) {
     display: block;
     margin-top: 12px;
     font-size: 18px;
-
     margin-bottom: 2px;
 }
 
@@ -439,7 +433,6 @@ main section div.cright p:nth-of-type(8) {
     font-size: 16px;
     hyphens: manual;
     text-align: justify;
-
     padding: 0;
     margin: 0;
 
@@ -503,6 +496,21 @@ br {
 }
 
 @media(max-width:1024px) {
+    nav.left img.strzalka {
+        left: 105.4%;
+    }
+
+    nav.top ul {
+        max-width: 708px;
+        padding-left: 166px;
+    }
+
+    nav.top ul li {
+        line-height: 70px;
+        font-size: 14px;
+        margin: 0 13px;
+    }
+
     main {
         max-width: 708px;
     }
@@ -523,24 +531,6 @@ br {
         width: 325px;
     }
 
-
-
-    nav.left img.strzalka {
-        left: 105.4%;
-    }
-
-    nav.top ul {
-        max-width: 708px;
-        padding-left: 166px;
-    }
-
-    nav.top ul li {
-        line-height: 70px;
-        font-size: 14px;
-        margin: 0 13px;
-
-    }
-
     header {
         max-width: 708px;
     }
@@ -548,10 +538,7 @@ br {
     header img.logo {
         width: 170px;
         top: -88px;
-
     }
-
-
 }
 
 @media(max-width:768px) {
@@ -562,30 +549,6 @@ br {
         top: 31px;
     }
 
-    main {
-        max-width: 608px;
-    }
-
-    main section {
-        width: 608px;
-    }
-
-    main section div.cleft {
-        width: 285px;
-    }
-
-    main section div.cright {
-        width: 280px;
-    }
-
-    main section div.cleft img {
-        width: 285px;
-    }
-
-    header {
-        max-width: 608px;
-    }
-
     nav.top ul {
         max-width: 608px;
         padding-left: 166px;
@@ -596,14 +559,6 @@ br {
         font-size: 14px;
         margin: 0 13px;
     }
-
-    header img.logo {
-        width: 170px;
-        top: -88px;
-        left: 0;
-
-    }
-
 
     nav.left {
         z-index: 2;
@@ -651,19 +606,6 @@ br {
         padding-left: 24px;
     }
 
-    body nav.left img.logobezkola {
-        width: 144px;
-        height: 32px;
-        top: -13.7%;
-        left: 125%;
-    }
-
-    body nav.left img.hide {
-        opacity: 0;
-    }
-
-
-
     nav.left img.strzalka {
         left: 105.4%;
         background: url(img/back.png);
@@ -675,83 +617,52 @@ br {
         padding-left: 24px;
     }
 
-
-}
-
-@media(max-width:414px) {
-    main {
-        max-width: 398px;
+    body nav.left img.logobezkola {
+        width: 144px;
+        height: 32px;
+        top: -13.7%;
+        left: 125%;
     }
 
-    main section {
-        width: 398px;
-    }
-
-    main section div.cleft {
-        width: 185px;
-    }
-
-    main section div.cright {
-        width: 180px;
-    }
-
-    main section div.cleft img {
-        width: 185px;
-    }
-
-    header {
-        height: 100px;
-        width: 360px;
-    }
-
-    nav.top ul {
-        padding-left: 6px;
-    }
-
-    nav.left img.strzalka {
-        opacity: 0.4;
-    }
-
-    nav.left p {
+    body nav.left img.hide {
         opacity: 0;
     }
 
-    nav.top ul li {
-        line-height: 40px;
-        font-size: 9px;
-        margin: 0 3px;
+    main {
+        max-width: 608px;
+    }
+
+    main section {
+        width: 608px;
+    }
+
+    main section div.cleft {
+        width: 285px;
+    }
+
+    main section div.cright {
+        width: 280px;
+    }
+
+    main section div.cleft img {
+        width: 285px;
+    }
+
+    header {
+        max-width: 608px;
     }
 
     header img.logo {
-        transform: scale(0.5);
-        top: -70px;
-        left: -75px;
+        width: 170px;
+        top: -88px;
+        left: 0;
     }
+}
 
-    nav.top ul li:nth-child(6) {
-        margin: 0 0 0 5px;
-        padding: 0 0 0 8px;
-    }
+@media(max-width:414px) {
 
-    nav.top ul li:nth-child(5) {
-        margin: 0 0 0 9px;
-        padding: 0 0 0 8px;
-    }
-
-    nav.top ul li:nth-child(4) {
-        margin: 0 0 0 6px;
-    }
-
-    nav.top ul li:nth-child(2) {
-        padding: 0 0 0 0.5px;
-    }
-
-    nav.top ul li:nth-child(1) {
-        margin: 0 1px 0 2.5px;
-    }
 
     nav.top {
-
         height: 40px;
         width: 100%;
     }
@@ -777,6 +688,44 @@ br {
         width: 87px;
     }
 
+
+
+    nav.top ul li {
+        line-height: 40px;
+        font-size: 9px;
+        margin: 0 3px;
+    }
+
+    nav.top ul li:nth-child(6) {
+        margin: 0 0 0 5px;
+        padding: 0 0 0 8px;
+    }
+
+    nav.top ul li:nth-child(5) {
+        margin: 0 0 0 9px;
+        padding: 0 0 0 8px;
+    }
+
+    nav.top ul li:nth-child(4) {
+        margin: 0 0 0 6px;
+    }
+
+    nav.top ul li:nth-child(2) {
+        padding: 0 0 0 0.5px;
+    }
+
+    nav.top ul li:nth-child(1) {
+        margin: 0 1px 0 2.5px;
+    }
+
+    nav.left img.strzalka {
+        opacity: 0.4;
+    }
+
+    nav.left p {
+        opacity: 0;
+    }
+
     nav.left ul li {
         font-size: 14px;
     }
@@ -789,10 +738,40 @@ br {
         opacity: 0;
     }
 
+    main {
+        max-width: 398px;
+    }
+
+    main section {
+        width: 398px;
+    }
+
+    main section div.cleft {
+        width: 185px;
+    }
+
+    main section div.cright {
+        width: 180px;
+    }
+
+    main section div.cleft img {
+        width: 185px;
+    }
+
+    header {
+        height: 100px;
+        width: 360px;
+    }
+
     header img.logo {
+        transform: scale(0.5);
+        top: -70px;
+        left: -75px;
         margin-left: 8px;
         top: -68px;
     }
+
+
 
     header div.about {
         top: 13px;
@@ -810,9 +789,32 @@ br {
         margin-top: 10px;
         left: 51%;
     }
+
+
+
+
 }
 
 @media(max-width:375px) {
+    nav.top ul {
+        padding-top: 0;
+        height: 40px;
+        padding-left: 100px;
+    }
+
+    nav.top img {
+        right: -2px;
+        top: 2px;
+    }
+
+    nav.top input {
+        right: 25px;
+        top: 2px;
+        height: 14px;
+        width: 77px;
+        font-size: 13px;
+    }
+
     main {
         max-width: 348px;
     }
@@ -854,29 +856,19 @@ br {
         left: -60px;
     }
 
-    nav.top ul {
-        padding-top: 0;
-        height: 40px;
-        padding-left: 100px;
-    }
-
-    nav.top img {
-        right: -2px;
-        top: 2px;
-    }
-
-    nav.top input {
-        right: 25px;
-        top: 2px;
-        height: 14px;
-        width: 77px;
-        font-size: 13px;
-    }
-
 
 }
 
 @media(max-width:360px) {
+    body nav.left img.logobezkola {
+        left: 85%;
+        transform: scale(0.8);
+    }
+
+    body nav.left img.hide {
+        opacity: 0;
+    }
+
     nav.top img {
         transform: scale(0.3);
         right: -10px;
@@ -892,9 +884,10 @@ br {
         width: 320px;
     }
 
-    body nav.left img.logobezkola {
+}
 
-        left: 85%;
+@media(max-width:320px) {
+    body nav.left img.logobezkola {
         transform: scale(0.8);
     }
 
@@ -902,10 +895,15 @@ br {
         opacity: 0;
     }
 
+    main section div.cleft img {
+        width: 145px;
+    }
 
-}
+    nav.top input {
+        right: 17px;
+        top: 24px;
+    }
 
-@media(max-width:320px) {
     main {
         max-width: 310px;
     }
@@ -920,15 +918,6 @@ br {
 
     main section div.cright {
         width: 145px;
-    }
-
-    main section div.cleft img {
-        width: 145px;
-    }
-
-    nav.top input {
-        right: 17px;
-        top: 24px;
     }
 
     header {
@@ -950,15 +939,5 @@ br {
         font-size: 13px;
         margin-top: 20px;
         left: 53%;
-    }
-
-    body nav.left img.logobezkola {
-
-        transform: scale(0.8);
-
-    }
-
-    body nav.left img.hide {
-        opacity: 0;
     }
 }
