@@ -314,12 +314,28 @@ main {
 
 /* tytuł naglowka w main */
 main h2 {
+    display: block;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     padding: 0;
     margin: 0;
+
 }
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    main h2 {
+        margin-left: 450px;
+    }
+
+    nav.left {
+        position: absolute;
+    }
+}
+
+
+
 
 /* stylowanie napisu w h2 ktrego oznaczylem spanem aby byl jak najbardziej podobny do tego z psd */
 main h2 span {
@@ -328,6 +344,7 @@ main h2 span {
 
 /* sekcja w sekcji glownej display flex zeby bylo wciecie  */
 main section {
+    margin: 0 auto;
     width: 998px;
     display: flex;
     justify-content: space-between;
@@ -934,6 +951,11 @@ br {
     nav.top input {
         right: 17px;
         top: 24px;
+    }
+
+    nav.top ul li {
+        font-size: 6.5px;
+        margin: 0 1px;
     }
 
     main {
