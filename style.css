@@ -474,7 +474,7 @@ br {
         float: left;
         margin-left: 20px;
         margin-top: 86px;
-        position: relative;
+        position: absolute;
         transition: 0.3s;
     }
 
